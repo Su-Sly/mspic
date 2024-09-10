@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+{template "content","list_meta"}
+{template "content","google"}
+<script> (function(w,d,t,r,u) { var f,n,i; w[u]=w[u]||[],f=function() { var o={ti:"247003772", enableAutoSpaTracking: true}; o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad") }, n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function() { var s=this.readyState; s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null) }, i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i) }) (window,document,"script","//bat.bing.com/bat.js","uetq"); </script>
+<link href="/xin/css/pignose.tab.min.css" rel="stylesheet"/>
+<link href="/xin/css/tab2.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-wrapper">
+<!-- Main Header-->
+<header class="main-header">
+    {template "content","header"}
+    </header>
+<!--End Main Header -->
+<!--Page Title-->
+<section class="page-title" style="background-image:url(/xin/htmlimg/banner/pro.jpg)">
+<div class="auto-container">
+<div class="clearfix">
+<div class="pull-left">
+<h1>{$title}</h1>
+</div>
+<div class="pull-right">
+<ul class="page-breadcrumb">
+<li><a href="{APP_PATH}">Home</a></li>
+<li>{catpos($catid)}</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!--End Page Title-->
+<!--Sidebar Page Container-->
+<div class="sidebar-page-container">
+<div class="auto-container">
+<div class="row clearfix">
+<!--Sidebar Side-->
+<div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
+<aside class="sidebar">
+<!--Blog Category Widget-->
+<div class="sidebar-widget sidebar-blog-category">
+<div class="sidebar-title style-two">
+<h2>Non-Woven Wire Mesh Products</h2>
+</div>
+<div class="sidebar-widget sidebar-blog-category">
+<ul class="blog-cat">
+								{pc:content  action="lists" catid="239"  order="inputtime ASC" num="8" page="$page"}
+									{loop $data $r}	
+										<li><a href="{$r['url']}" title="{$r['title']}">{$r['title']}</a></li>
+									{/loop}
+								{/pc}
+                            </ul>
+</div>
+</div>
+<!--Brochure-->
+<div class="sidebar-widget brochure-widget">
+<div class="sidebar-title style-two">
+<h2>Our Brochures</h2>
+</div>
+<div class="brochure-box">
+<div class="inner">
+<span class="icon fa fa-file-pdf-o"></span>
+<div class="text">Pdf.  Download</div>
+</div>
+<a class="overlay-link" href=""></a>
+</div>
+<div class="brochure-box">
+<div class="inner">
+<span class="icon flaticon-file-1"></span>
+<div class="text">Doc.  Download</div>
+</div>
+<a class="overlay-link" href=""></a>
+</div>
+</div>
+<!--Contact Widhet-->
+<div class="sidebar-widget contact-info-widget">
+<div class="inner-box">
+<ul>
+<li><span class="icon fa fa-phone"></span>0086-311-89277936</li>
+<li><span class="icon fa fa-send"></span>sales@maishimfg.com</li>
+</ul>
+</div>
+</div>
+<!-- Popular Posts -->
+<div class="sidebar-widget popular-posts">
+<div class="sidebar-title style-two"><h2>Recent news</h2></div>
+								{pc:content  action="lists" catid="223"  order="inputtime DESC" num="8" page="$page"}
+									{loop $data $r}	
+									<article class="post">
+<figure class="post-thumb"><a href="{$r['url']}"><img alt="" src="{thumb($r['thumb'],72,64)}"/></a></figure>
+<div class="text"><a href="{$r['url']}">{str_cut($r['title'],66)}...</a></div>
+<div class="post-info">{date('m/d/Y',$r['inputtime'])}</div>
+</article>
+									{/loop}
+								{/pc}
+                        </div>
+<!-- Popular Tags -->
+<div class="sidebar-widget popular-tags">
+<div class="sidebar-title"><h2>Tages</h2></div>
+<a href="">Welded Wire Mesh</a>
+<a href="">Welded Wire Mesh Fence</a>
+</div>
+</aside>
+</div>
+<!--Content Side / Our Blog-->
+<div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
+<div class="services-single">
+<div class="inner-box">
+<div class="image">
+<img alt="{$title}" src="/xin/minbanner/curvy_welded_mesh_fence_minibar.png">
+</img></div>
+<h2>{$title}</h2>
+<div class="text">
+                            	{$content}     
+								<!--左图右文开始-->
+<div class="two-column row clearfix">
+<div class="image-column col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="image">
+<img alt="Mesh Filter for Tea &amp; Coffee" src="https://www.maishimfg.com/xin/image/uploaded/curvy_welded_mesh_fence_pic_01.png"/>
+</div>
+</div>
+<div class="image-column col-lg-6 col-md-12 col-sm-12 col-xs-12">
+<div class="image">
+<img alt="Mesh Filter for Tea &amp; Coffee" src="https://www.maishimfg.com/xin/image/uploaded/curvy_welded_mesh_fence_pic_05.png"/>
+</div>
+</div>
+<!--左图右文结束-->
+
+<!--Featured Blocks-->
+<div class="featured-blocks">
+<div class="clearfix">
+<div class="featured-block-three col-lg-4 col-md-6 col-sm-6 col-xs-12">
+<div class="inner-box">
+<div class="icon-box">
+<span><img src="/xin/htmlimg/image/inspection.png"/></span>
+</div>
+<h3><a href="">Full Inspection</a></h3>
+<div class="text">Full inspection for all the orders we manufacture</div>
+</div>
+</div>
+<div class="featured-block-three col-lg-4 col-md-6 col-sm-6 col-xs-12">
+<div class="inner-box">
+<div class="icon-box">
+<span><img src="/xin/htmlimg/image/tolerance.png"/></span>
+</div>
+<h3><a href="">Clearly Tolerance</a></h3>
+<div class="text">All the inspection tolerance is open to our clients</div>
+</div>
+</div>
+<div class="featured-block-three col-lg-4 col-md-6 col-sm-6 col-xs-12">
+<div class="inner-box">
+<div class="icon-box">
+<span><img src="/xin/htmlimg/image/service.png"/></span>
+</div>
+<h3><a href="">Perfect Service</a></h3>
+<div class="text">Perfect service from pre-sale to after-sale</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<h3>Basic Types</h3>
+
+<!--平行三个图开始-->
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+    <div class="image">
+      <img alt="Image 1" src="https://www.maishimfg.com/xin/image/uploaded/curvy_welded_mesh_fence_pic_02.png">
+    </div>
+    <h4>MSC-01</h4>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+    <div class="image">
+      <img alt="Image 2" src="https://www.maishimfg.com/xin/image/uploaded/curvy_welded_mesh_fence_pic_03.png">
+    </div>
+    <h4>MSC-02</h4>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+    <div class="image">
+      <img alt="Image 3" src="https://www.maishimfg.com/xin/image/uploaded/curvy_welded_mesh_fence_pic_04.png">
+    </div>
+    <h4>MSC-03</h4>
+  </div>
+</div>
+<!--平行三个图结束-->
+
+<!--平行三个图开始-->
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+    <div class="image">
+      <img alt="Image 1" src="https://www.maishimfg.com/xin/image/uploaded/curvy_welded_mesh_fence_pic_06.png">
+    </div>
+    <h4>MSC-04</h4>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+    <div class="image">
+      <img alt="Image 2" src="https://www.maishimfg.com/xin/image/uploaded/curvy_welded_mesh_fence_pic_07.png">
+    </div>
+    <h4>MSC-05</h4>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+    <div class="image">
+      <img alt="Image 3" src="https://www.maishimfg.com/xin/image/uploaded/curvy_welded_mesh_fence_pic_08.png">
+    </div>
+    <h4>MSC-06</h4>
+  </div>
+</div>
+<!--平行三个图结束-->
+
+<!--横向间隔开始-->
+<table align="center">
+	<tr>
+    <td height="50"></td>
+	</tr>
+</table>
+<!--横向间隔结束-->
+
+<!--页面等宽图开始-->
+<div class="row">
+  <div class="col-lg-12 text-center">
+    <div class="image">
+      <img alt="Full Width Image" src="https://www.maishimfg.com/xin/image/uploaded/curvy_welded_mesh_fence_pic_09.png">
+    </div>
+  </div>
+</div>
+<!--页面等宽图结束-->
+
+
+
+
+
+
+<!--选项卡-->
+<div class="sec-title">
+<h2>Standard Specification for {$title}</h2>
+<div class="text">Check the tabs below to learn more about the standard specifications for our {$title}!</div>
+</div>
+<div class="row">
+<div class="article">
+<div class="tab">
+
+<h4>Common Materials</h4>
+Electro galvanized, hot-dip galvanized, PVC coated
+<h4>Common Wire Diameter</h4>
+AWG8.5 (3mm), AWG6 (4mm), AWG4 (5mm)
+
+
+
+
+</div>
+</div>
+<!--Comment Form-->
+<div class="comment-form">
+<div class="group-title"><h2>Your Requirements</h2></div>
+<div class="form-inner">
+<!--Comment Form-->
+<form action="{APP_PATH}index.php?m=formguide&amp;c=index&amp;a=show&amp;formid=12&amp;action=js&amp;siteid=1" method="post">
+<div class="row clearfix">
+<div class="col-md-6 col-sm-6 col-xs-12 form-group">
+<input id="name" name="info['name']" placeholder="Your name" required="" type="text"/>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12 form-group">
+<input id="mail" name="info['mail']" placeholder="Email address" required="" type="email"/>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+<textarea id="question" name="info['question']" placeholder="Your Comments"></textarea>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+<button class="btn-style-one" name="dosubmit" style="border:0px;" type="submit">Post Comment</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--End Sidebar Page Container-->
+<!--Main Footer-->
+<footer class="main-footer">
+		{template "content","footer"}
+    </footer>
+<!--End Main Footer-->
+<!--End pagewrapper-->
+{template "content","js"}
+<script src="/xin/javascript/validate.js"></script>
+<script src="/xin/javascript/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('.tab').pignoseTab({
+		animation: true,
+		children: '.tab'
+	});
+});
+</script>
+<script>
+$(function () {
+    var Accordion = function (el, multiple) {
+        this.el = el || {};
+        this.multiple = multiple || false;
+        var links = this.el.find('.link');
+        links.on('click', {
+            el: this.el,
+            multiple: this.multiple
+        }, this.dropdown);
+    };
+    Accordion.prototype.dropdown = function (e) {
+        var $el = e.data.el;
+        $this = $(this), $next = $this.next();
+        $next.slideToggle();
+        $this.parent().toggleClass('open');
+        if (!e.data.multiple) {
+            $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+        }
+        ;
+    };
+    var accordion = new Accordion($('#accordion'), false);
+});
+//@ sourceURL=pen.js
+</script>
+</body>
+</html>
